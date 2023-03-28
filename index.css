@@ -5,6 +5,7 @@
 body {
     background-color: white;
     padding: 16px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .wrapepr {
@@ -22,6 +23,7 @@ body {
     color: #511f54;
     font-size: 16px;
     margin: 48px 0 26px 0;
+    line-height: 28px;
     font-weight: 700;
 }
 
@@ -29,15 +31,26 @@ body {
     font-size: 12px;
     line-height: 22px;
     color: #511f54;
-    font-weight: 300;
+    font-weight: 400;
+    margin-bottom: 16px;
 }
 
 .ratings-wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-.rating-1 {
+.card {
     background-color: #f7f2f8;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    color: #511f54;
+    padding: 16px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.star-wrapper {}
