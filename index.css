@@ -15,6 +15,11 @@ body {
     justify-content: center;
 }
 
+.top {
+    flex-direction: column;
+    width: 100%;
+}
+
 .content {
     text-align: center;
 }
@@ -41,7 +46,7 @@ body {
     width: 100%;
 }
 
-.card {
+.card-1 {
     background-color: #f7f2f8;
     border-radius: 6px;
     margin-bottom: 16px;
@@ -53,7 +58,31 @@ body {
     align-items: center;
 }
 
-.card p {
+.card-2 {
+    background-color: #f7f2f8;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    color: #511f54;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-3 {
+    background-color: #f7f2f8;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    color: #511f54;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-text {
     font-weight: 700;
     font-size: 16px;
 }
@@ -67,7 +96,7 @@ body {
     margin-top: 16px;
 }
 
-.cards {
+.cards-start {
     background-color: #511f54;
     margin-bottom: 16px;
     border-radius: 8px;
@@ -75,7 +104,23 @@ body {
     padding: 28px;
 }
 
-.top {
+.cards-middle {
+    background-color: #511f54;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    color: white;
+    padding: 28px;
+}
+
+.cards-end {
+    background-color: #511f54;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    color: white;
+    padding: 28px;
+}
+
+.top-card {
     display: flex;
     margin-bottom: 28px;
 }
@@ -87,8 +132,113 @@ span {
 .user-img {
     border-radius: 100%;
     height: 40px;
+    width: 40px;
 }
 
 .subtitle {
     color: #d374ae;
+}
+
+@media screen and (min-width: 763px) {
+
+    .top {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+
+    body {
+        padding: 256px;
+        padding-bottom: 112px;
+        padding-top: 128px;
+    }
+
+    .content {
+        text-align: start;
+        align-self: start;
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 64px;
+        margin-top: 0;
+    }
+
+    .description {
+        font-size: 16px;
+        word-spacing: 6px;
+    }
+
+    .ratings-wrapper {
+        width: 600px;
+        height: 300px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-1 {
+        width: 400px;
+        height: 32px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        align-self: flex-start;
+    }
+
+    .card-2 {
+        width: 400px;
+        height: 32px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        align-self: center;
+    }
+
+    .card-3 {
+        width: 400px;
+        height: 32px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        align-self: flex-end;
+    }
+
+    .star-wrapper {
+        margin-bottom: 0px;
+        margin-right: 16px;
+    }
+
+    .cards-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards-start {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 0;
+        align-self: flex-start;
+    }
+
+    .cards-middle {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 0;
+        align-self: center;
+    }
+
+
+    .cards-end {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 0;
+        align-self: flex-end;
+    }
+
+
 }
