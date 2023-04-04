@@ -6,7 +6,14 @@ body {
     background-color: white;
     padding: 16px;
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url(images/bg-pattern-bottom-mobile.svg);
+}
+
+@media screen and (max-width: 489px) {
+    body {
+        background-image: url(images/bg-pattern-bottom-mobile.svg), url(images/bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: bottom, top right;
+    }
 }
 
 .wrapepr {
@@ -180,9 +187,10 @@ span {
         padding: 256px;
         padding-bottom: 90px;
         padding-top: 108px;
-        background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-mobile.svg);
+        background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
         background-repeat: no-repeat, no-repeat;
-        background-position: bottom, top right;
+        background-position: bottom right, top left;
+
     }
 
     .content {
